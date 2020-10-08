@@ -4,25 +4,25 @@
 Simple boiplerplate to organize books in LaTeX and some scripts to help.
 
 ## Structure
-### book
+### book/
 `book.tex` is where you basic definitions are, title, author, chapter calls etc
 `cover.tex` is where the book cover is defined, maybe you won't have to change this file.
 
-### chapters
+### chapters/
 This directory is where your chapters are. You can create new chapter files with a script (see below) and to use them on your book add `\subfile{../chapter/your-file-name.tex}` on `book.tex`.
 
-### configs
+### configs/
 This is where layout configs and enviroments are. Maybe you won't have to change files here.
 
-### images
+### images/
 Well... This one is easy, right? hehe
 
 A file named `cover.jpg` will be automatically used in the book cover.
 
-### logs
+### logs/
 When you compile your book, the compilation logs will appear here. You may ignore this dir if everything is all right :)
 
-### pdf
+### pdf/
 This dir is where your pdf will be after compilation
 
 ## Scripts
