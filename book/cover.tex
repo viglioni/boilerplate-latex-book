@@ -1,0 +1,37 @@
+\documentclass[../book/book.tex]{subfiles}
+
+\begin{document}
+\thispagestyle{empty} % Suppress page numbering
+\ThisCenterWallPaper{1.12}{../images/cover.jpg} % Add the background image, the first argument is the scaling - adjust this as necessary so the image fits the entire page
+\begin{tikzpicture}[remember picture,overlay]
+  \node [rectangle,
+    rounded corners,
+    fill=white,
+    opacity=0.75,
+    anchor=south west,
+    minimum width=4cm,
+    minimum height=6cm] (box) at (-0.5,-10) (box){}; % White rectangle - "minimum width/height" adjust the width and height of the box; "(-0.5,-10)" adjusts the position on the page
+  \node[anchor=west,
+    color01,
+    xshift=-1.8cm,
+    yshift=-0.4cm,
+    text width=2.9cm,
+    font=\sffamily\scriptsize] at (box.north){\edition}; % "Text width" adjusts the wrapping width, "xshift/yshift" adjust the position relative to the white rectangle
+  \node[anchor=west,
+    color01,
+    xshift=-1.8cm,
+    yshift=-2cm,
+    text width=3.4cm,
+    font=\sffamily\bfseries\scshape\Large] at (box.north){\thetitle};
+  % "Text width" adjusts the wrapping width, "xshift/yshift" adjust the position relative to the white rectangle
+  \node[anchor=west,
+    color01,
+    xshift=-1.8cm,
+    yshift=-5cm,
+    text width=2.9cm,
+    font=\sffamily\bfseries] at (box.north){\theauthor}; % "Text width" adjusts the wrapping width, "xshift/yshift" adjust the position relative to the white rectangle
+\end{tikzpicture}
+
+\newpage % Make sure the following content is on a new page
+
+\end{document}

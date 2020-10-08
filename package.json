@@ -1,0 +1,14 @@
+{
+  "name": "LaTeX-Book-Boilerplate",
+  "version": "1.0.0",
+  "main": "book/book.tex",
+  "author": "Laura Viglioni",
+  "license": "CC-BY-NC-SA-3.0",
+  "scripts": {
+    "compile": "node ./scripts/compileScript.js",
+    "count": "export LC_CTYPE=en_US.UTF-8 && export LC_ALL=en_US.UTF-8 && node ./scripts/countWordsScript.js",
+    "name": "node ./scripts/setBookNameScript.js",
+    "chapter": "node ./scripts/newChapterScript.js"
+  },
+  "fileName": "a-book-with-a-nice-name"
+}

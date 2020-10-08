@@ -1,0 +1,39 @@
+% ----------------------------------------------------------------------------------------
+%	DOCUMENT CONFIGURATIONS AND INFORMATION
+% ----------------------------------------------------------------------------------------
+
+\documentclass[oneside,11pt]{memoir} % Font size
+
+\input{../config/enviroments.tex}
+\input{../config/structure.tex} % Include the file that specifies the document structure and layout
+
+\usepackage{subfiles}
+
+\title{Your book name :)}
+\author{Your name} 
+\newcommand{\edition}{Edition Zero} 
+
+
+\begin{document}
+
+% -----------------------------------------------------------------------------------------
+%	COVER PAGE
+% -----------------------------------------------------------------------------------------
+\subfile{../book/cover.tex}
+
+
+% -----------------------------------------------------------------------------------------
+%	TABLE OF CONTENTS
+% -----------------------------------------------------------------------------------------
+
+\tableofcontents % Prints the table of contents
+
+% -----------------------------------------------------------------------------------------
+%	CHAPTER FILES
+% -----------------------------------------------------------------------------------------
+
+\subfile{../chapters/chapter1.tex}
+\subfile{../chapters/chapter2.tex}
+\subfile{../chapters/chapter3.tex}
+
+\end{document}
