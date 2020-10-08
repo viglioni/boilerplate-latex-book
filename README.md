@@ -56,10 +56,10 @@ Notice that this script will not the chapter to your book, it's up to you add in
 
 ## Requirements
 To be able to run the scripts, you must have installed:
-> [pdflatex](https://www.latex-project.org/get/)
-> bibtex
-> [node](https://nodejs.org/en/)
-> [yarn](https://yarnpkg.com/) (optional)
+- [pdflatex](https://www.latex-project.org/get/)
+- bibtex
+- [node](https://nodejs.org/en/)
+- [yarn](https://yarnpkg.com/) (optional)
 
 It will work on a Linux or a Macintosh. If `pdflatex` and `npm/yarn` run on Windows powershell the scripts might work there :)
 
