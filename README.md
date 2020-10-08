@@ -68,7 +68,7 @@ It will work on a Linux or a Macintosh. If `pdflatex` and `npm/yarn` run on Wind
 It is mostly configured to Brazilian Portuguese. You can change summary name adding this line to your code before `\tableofcontents` on `book/book.tex`:
 ```latex
 \renewcommand*\contentsname{Summary}
-``
+```
 
 ## Acknowledgments
 This boilerplate was written using a eBook template from [LaTeXTemplates]( http://www.LaTeXTemplates.com) from [Luis Cobo](luiscobogutierrez@gmail.com) and  [Vel](vel@latextemplates.com) under [CC BY-NC-SA 3.0](http://creativecommons.org/licenses/by-nc-sa/3.0/) with small modifications of mine.
