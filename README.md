@@ -16,6 +16,7 @@ This is where layout configs and enviroments are. Maybe you won't have to change
 
 ### images
 Well... This one is easy, right? hehe
+
 A file named `cover.jpg` will be automatically used in the book cover.
 
 ### logs
@@ -32,6 +33,7 @@ Obs.: whenever you see `yarn` you might change for `npm run` if you don't have y
 $ yarn compile
 ```
 Will compile `book/book.tex` (do not change this filename) into `pdf/your-book-name.pdf`. If your book name is not defined in `package.json` the script will ask you, don't worry. If your book is called "Hi this is my book" the generated file will be `pdf/hi-this-is-my-book.pdf`
+
 Notice that you might find a error with `bibtex` execution, since it will fail if you don't have any bibliography on your book, but that is ok.
 
 ### Count words
